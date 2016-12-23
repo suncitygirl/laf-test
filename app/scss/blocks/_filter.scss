@@ -1,0 +1,10 @@
+@import "filter-form";
+.filter {
+    border: solid lighten(black, 80%) 1px;
+    padding: 5% 8% 6% 6%;
+    &__title {
+        margin: 0;
+        font-size: $font-size--lg;
+        font-weight: 400;
+    }
+}

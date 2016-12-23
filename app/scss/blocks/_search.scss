@@ -1,0 +1,47 @@
+@import "catalog";
+.search {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    &__catalog-btn {
+        flex-grow: 1;
+        padding-left: 24px;
+        font-size: $font-size--sm;
+        color: white;
+        background-color: $sub-color;
+        outline: none;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        outline: none;
+    }
+    &__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 6;
+        padding: 0 1%;
+        background-color: $main-color;
+    }
+}
+.search-form {
+    &__input {
+        width: 75%;
+        border: none;
+        height: 30px;
+        padding: 0 2%;
+        font-size: $font-size--sm;
+        outline: none;
+    }
+    &__btn {
+        height: 30px;
+        width: 20%;
+        font-family: $font-family-base;
+    }
+    &__catalog {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}

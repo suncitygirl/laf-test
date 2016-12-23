@@ -1,0 +1,14 @@
+.target-auto {
+  background: url("../../img/target-auto__cats.jpg") no-repeat center;
+  background-size: cover;
+  height: 150px;
+  border: solid lighten(black, 80%) 1px;
+  &__title {
+    color: white;
+    width: 50%;
+    margin-top: 20%;
+    margin-left: 5%;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+}

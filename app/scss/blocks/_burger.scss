@@ -1,0 +1,47 @@
+.search__burger {
+    display: block;
+    position: relative;
+    left: -4%;
+    top: -6px;
+    height: 3px;
+    background-color: white;
+    margin-top: -3px;
+    border-radius: 20%;
+    max-width: 24px;
+    transition: background-color 0.3s;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        margin-top: -6px;
+        border-radius: 20%;
+        transition: transform 0.7s, width 0.7s;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        margin-top: 6px;
+        border-radius: 20%;
+        transition: transform 0.7s, width 0.7s;
+    }
+    &-clicked {
+        background-color: transparent;
+        &::after {
+            width: 120%;
+            transform: rotate(45deg) translate(-5px, -2px);
+        }
+        &::before {
+            width: 120%;
+            transform: rotate(-45deg) translate(-7px, 4px);
+        }
+    }
+}

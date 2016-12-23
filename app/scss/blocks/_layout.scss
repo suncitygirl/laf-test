@@ -1,0 +1,39 @@
+@import "blocks/breadcrumbs";
+@import "blocks/products-list";
+@import "blocks/snippet-card";
+@import "blocks/offers";
+@import "blocks/target-auto";
+@import "blocks/filter";
+@import "blocks/search";
+.layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 7%;
+    margin: 0 auto;
+    max-width: 2150px;
+    &__breadcrumbs {
+        flex-basis: 100%;
+        margin-top: $margin-base;
+    }
+    &__search {
+        height: 50px;
+        flex-basis: -1% + (880/(880+300) * 100%);
+        margin-top: $margin-base;
+    }
+    &__products-list {
+        flex-basis: -1% + (880/(880+300) * 100%);
+        margin-right: 1%;
+        margin-bottom: $margin-base * 3.5;
+        // min-width: 790px;
+    }
+    &__side-bar {
+        flex-basis: -1% + 300/(880+300) * 100%;
+        flex-shrink: 5;
+        flex-grow: 5;
+        margin-top: -50px;
+    }
+    &__target-auto {
+        margin-bottom: $margin-base;
+    }
+}

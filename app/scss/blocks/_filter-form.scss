@@ -1,0 +1,30 @@
+.filter-form {
+    &__checkbox {
+        display: inline-block;
+        width: 10%;
+    }
+    &__title {
+        text-decoration: none;
+        border-bottom: dotted 1px;
+    }
+    &__fieldset-1,
+    &__fieldset-2 {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__fieldset-1 {
+        margin-top: 3%;
+    }
+    &__fieldset-2 {
+        margin-top: 8%;
+    }
+    &__checkbox {
+        outline: none;
+        margin: 5px 0;
+    }
+    & label {
+        display: inline-block;
+        width: 85%;
+    }
+}

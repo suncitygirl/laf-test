@@ -1,0 +1,28 @@
+@import "normalize";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "blocks/common-blocks";
+@import "blocks/layout";
+@import "blocks/header";
+@import "blocks/main-footer";
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html {
+    font-size: $html-font-size-base;
+    line-height: $line-height-base;
+    font-family: $font-family-base;
+}
+body {
+    min-width: 1200px;
+    margin: 0 auto;
+    font-size: $font-size;
+    -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+}
+* {
+    box-sizing: border-box;
+}

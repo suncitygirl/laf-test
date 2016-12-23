@@ -1,0 +1,11 @@
+.products-list {
+  &__title {
+    font-weight: normal;
+  }
+  &__item {
+    position: relative;
+    margin-bottom: 30px;
+    transform: translate3d(0,0,0);
+    transition: margin-bottom 0.5s ease;
+  }
+}

@@ -1,0 +1,50 @@
+.catalog {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+    border: solid 1px;
+    font-size: 0;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s, transform 0.5s;
+    visibility: hidden;
+    transform: scaleY(0.5);
+    transform-origin: 0 0;
+    border: solid lighten(black, 80%) 1px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    &--active {
+        visibility: visible;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    &__item {
+        display: inline-block;
+        font-size: $font-size;
+        &--interactive-image {
+            height: 350px;
+            width: 70%;
+            background: url('../../img/full-catalog__cat.png') no-repeat center;
+            background-size: contain;
+        }
+        &--tree {
+            width: 30%;
+        }
+    }
+    &__tree {
+        padding: 10%;
+        height: 350px;
+        overflow-y: scroll;
+    }
+    &__inner-list {
+        overflow-y: scroll;
+        margin-left: 15px;
+    }
+    &__tree-inner-level-1 {
+        margin-left: 30px;
+    }
+    &__tree-inner-level-2 {
+        margin-left: 35px;
+    }
+}

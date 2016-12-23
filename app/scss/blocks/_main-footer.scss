@@ -1,0 +1,36 @@
+.main-footer {
+  padding: 3% 7%;
+  background-color: $main-color;
+  &__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 2150px;
+  margin: 0 auto;
+   }
+  &__item {
+    flex-grow: 1;
+    &--contacts {
+      flex-grow: 2;
+      padding-left: 10%;
+      font-size: $font-size--bg;
+      color: white;
+    }
+    & a {
+      color: white;
+    }
+  }
+  &__contacts-item {
+    margin-top: $margin-base * 1.5;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: $margin-base * 1.5;
+    font-size: $font-size--bg;
+    font-weight: normal;
+    color: black;
+  }
+  &__phone {
+    font-size: $font-size--lg;
+  }
+}
